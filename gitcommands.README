@@ -1,0 +1,30 @@
+-GIT: version control system(better way to save files). Gives options as to when/ how you want to save. Git init. Initializes. Ls-la brings up all files even hidden ones. Github is used on the internet(git is local). “repository” = top level folder.
+•	git add (name of file) – will now keep track of file. 
+•	git commit will save 
+•	Must specify a comment for each commit. 
+•	git add puts files in the staging area( green room) pre save. 
+•	git log gives you a journal of the repository –gives name(a hash), author and date. 
+•	Generally hashes aren’t unique but for commits are. 
+•	Consult slides to see how to display log in a more attractive way 
+•	Clear command lets you escape
+•	MUST git add before you git commit. –note most recent commit = HEAD and 2nd most HEAD~1, 3rd HEAD~2. 
+•	Git commit will commit in the state that you added it in. 
+•	Diff = machine generated description of difference between 2 different files(they are stored between files). Diff  is placed before the file name
+•	Storage is saved because of the use of diff(rather than a separate replica of the file at different time stamps)
+•	put a repo on github. And a “remote” are the other places your repository is saved. Convention if you have one remote = origin. 
+•	To sync code with origin..git push –u origin master. 
+•	To get the most recent changes = do a pull(should do this to make sure you receive all info you missed before you commit anything) 
+•	Conflict = when 2 users have edited the same lines. 
+•	Getting someone else’s repository on your machine = cloning. 
+•	Git merge –abort goes back to where you were 
+•	Git blame –tells you who produced the conflict, where and when 
+•	Cannot commit until conflict is resovled. >this scenario is worst that can happen in git
+•	Git checkout –theirs path/to/file or git checkout –ours path/file > either uses theirs or yours respectively. 
+•	You can tag your commit and give you a time
+•	Can git checkout “tagname” to refrence in the future. 
+•	Branching = going separate ways in git. Ex. git checkout –b feature_”feature name” and you are no longer on branch master and all of his commits will be to the new branch. 
+•	Git push origin “feature name” original keep track of the fact that there are features upstream. 
+•	Git merge – merges 2 branches. 
+•	For small projects you can and should stay on master rather than branching. Branching is better for exploratory things. 
+•	Git revert HEAD~2..HEAD if you commit and want to go back. 
+•	Other commands: pull request –tells other people to treat your repo as their remote. “cherry picking” – replays previous commit. 
